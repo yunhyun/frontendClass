@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                font-family: GungsuhChe;
+                text-align: center;
+                padding: 10px;
+                /* background-color: blanchedalmond; */
+            }
+            tr:nth-child(even){
+                background-color: blueviolet;
+            }
+        </style>
+
+        <title>테이블연습</title>
+    </head>
+
+    <body>
+        <table>
+            <caption>표제목</caption>
+            <tr>
+                <th colspan="2">이름</th>
+                <th>성별</th>
+                <!-- <th>나이</th> -->
+            </tr>
+            <tr>
+                <td rowspan="2">이름1</td>
+                <td>여자</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <!-- <td>이름2</td> -->
+                <td>남자</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>이름3</td>
+                <td>여자</td>
+                <td>33</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
