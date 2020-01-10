@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout 연습</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #header{
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #nav{
+            float: left;
+            width: 30%;
+            background-color: coral;
+            padding: 20px;
+            height: 300px;
+        }
+        #nav ul{
+            list-style-type: none;
+            padding: 5px;
+            
+        }
+        #article{
+            float: left;
+            width: 70%;
+            background-color: darkgreen;
+            padding: 20px;
+            height: 300px;
+        }
+        #between{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #footer{
+            background-color: darkkhaki;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px){
+            #nav, #article{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>우리나라의 도시</h2>
+    </div>
+
+    <div id="main">
+        <div id="nav">
+            <ul>
+                <li><a href="#">인천</a></li>
+                <li><a href="#">서울</a></li>
+                <li><a href="#">제주</a></li>
+            </ul>
+
+        </div>
+        <div id="article">
+            <h2>인천</h2>
+            <p>인천광역시는 대한민국 서해안에 있는 광역시이다. 서쪽으로는 황해를 사이로 중화인민공화국이 있다. 인천항과 인천국제공항을 중심으로 제조업과 물류 산업이 발달하였다. 시청 소재지는 남동구 구월동이고, 행정구역은 8구 2군이다.</p>
+        </div>
+    </div>
+
+    <div id="between">
+
+    </div>
+
+    <div id="footer">
+        <h2>footer 영역</h2>
+    </div>
+</body>
+</html>
