@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iframe 연습</title>
+    <style>
+        .youtube iframe{
+            position:absolute;
+            /* top:0;
+            left:0; */
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <iframe height="400" width="700"
+            style="border: 1px red solid;"
+            name="goframe"></iframe>
+    
+    <a href="https://ko.wikipedia.org/" target="goframe">
+        iframe으로 링크</a>
+    
+    
+    <h2>youtube 동영상</h2>  
+    <div class="youtube">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/J7d-0fHKVsA"
+        allowfullscreen
+        frameborder="0"></iframe>
+    </div>      
+</body>
+</html>
