@@ -8,35 +8,41 @@
         <form>
             아이디 : <input type="text" name="id" placeholder="아이디를 입력하세요"><br>
             비밀번호 : <input type="password" name="password" placeholder="6~8자리 영숫자혼합"><br>
-            
-            
-            
-            
             성별 : <input type="radio" name="gender" value="male">남자
-                <input type="radio" name="gender" value="female">여자<br>
-            취미 : 
-            <input type="checkbox" name="hobby" value="music">음악
-            <input type="checkbox" name="hobby" value="game">게임
-            <input type="checkbox" name="hobby" value="exercise">운동
-            <input type="checkbox" name="hobby" value="movie">영화<br>
-            이메일 : <input type="email" name="email"><br>
-            인사말 : <textarea name="welcome" rows="5" cols="50"></textarea>
+                    <input type="radio" name="gender" value="female">여자 <br>
+            이메일 : <input type="email">  <br>                   
             주소 : 
             <select name="address">
                 <optgroup label="미추홀구">
-                    <option value="gkrdlrehd">학익동</option>
-                    <option value="dydgusehd">용현동</option>
+                    <option value="hakikdong">학익동</option>
                 </optgroup>
                 <optgroup label="남동구">
-                    <option value="rndnjfehd">구월동</option>
+                    <option value="guweoldong">구월동</option>
+                    <option value="mansudong">만수동</option>
+                </optgroup>
+                <optgroup label="연수구">
+                    <option value="songdodong">송도동</option>
                 </optgroup>
             </select><br>
-            생년월일 : <input type="date" name="birth"><br>
-            키 : <input type="number" min="100" max="200"
-                       step="5" name="height"><br>
-            현재기분 : <input type="range" min="1" max="10"><br>
-            <input type="submit" value="회원가입">
+            관심분야 : 
+            <input type="checkbox" name="interest" value="IT">IT
+            <input type="checkbox" name="interest" value="game">game
+            <input type="checkbox" name="interest" value="economic">경제
+            <input type="checkbox" name="interest" value="politics">정치
+            <br>
+            생년월일 :
+            <input type="date" name="birth"> <br>
+
+            몸무게 : 
+            <input type="number" min="0" max="150"
+                    step="5" name="weight"> <br>
+            현재 나의 기분 : 
+            <input type="range" min="1" max="10" name="feel"><br>                    
+            가입인사 : 
+            <textarea name="hello" rows="5" cols="50"></textarea><br>
             <input type="reset" value="초기화">
+            <br><input type="submit" value="회원가입">
+            
         </form>
     </body>
 </html>
