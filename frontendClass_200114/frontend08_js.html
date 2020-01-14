@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.write("<h2>어디에 나올까요?</h2>");
+        var var1 = "변수값";
+        document.write("<h1>"+var1+"</h1>");
+        function testFn(){
+            var text1 = document.getElementById("in1").value;
+            console.log(text1);
+        }
+    </script>
+</head>
+<body>
+    첫번째 입력 : <input type="text" id="in1"><br>
+    <button onclick="testFn()">클릭!!</button>
+</body>
+</html>

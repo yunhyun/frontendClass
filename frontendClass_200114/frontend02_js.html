@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function testFn(){
+        // 자바스크립트 object
+       var myProfile={
+           이름:"조윤현",
+           사는곳:"인천",
+           영어이름:"yunhyun",
+           나이:20
+       }; 
+       document.getElementById("test").innerHTML=
+            "나의 이름은"+myProfile.이름+"사는 곳은 "+myProfile.사는곳+
+            "영어 이름은"+myProfile.영어이름+"나이는"+myProfile.나이;
+        
+        console.log("출력???"+myProfile.이름);
+    }
+    </script>
+</head>
+<body>
+    <button onclick="testFn()">클릭</button>
+    <div id="test"></div>
+</body>
+</html>

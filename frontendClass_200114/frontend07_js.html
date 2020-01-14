@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            var name;
+            if(confirm("가입을 진행하시겠어요?")){
+                name = prompt("이름을 입력해주세요");
+                alert(name);
+            }else{
+                alert("No를 누르셨네요");
+            }
+        }
+
+        function testFn1(){
+            alert("2초 후에 나왔어요");            
+        }
+
+        function testFn2(){
+            var time = setInterval(timerTest, 2000);
+            function timerTest(){
+                var date = new Date();
+                document.getElementById("test").innerHTML=date;
+                    
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <button onclick="testFn()">클릭!!</button>
+    <button onclick="setTimeout(testFn1, 2000)">2초후에 실행됩니다.</button>
+    <button onclick="testFn2()">클릭!!</button>
+    <div id="test"></div>
+</body>
+</html>

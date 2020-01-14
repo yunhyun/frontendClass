@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            document.getElementById("test").innerHTML=Date();
+        
+        // 자바스크립트 배열 
+            var menus = ["돈까스","떡볶이","짬뽕"];
+            menus[0] = "치즈돈까스";
+            menus.push("와퍼");
+            
+            menus[7] = "치즈피자";
+            menus.pop();
+            menus.shift();
+            menus.sort();
+            menus.reverse();
+
+            var menuPrint = "<ul>";
+            for(var i=0;i<menus.length;i++){
+                menuPrint += "<li>"+menus[i]+"</li>";
+            }
+            menuPrint += "</ul>";
+
+
+            document.getElementById("test1").innerHTML=menuPrint;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="testFn()">클릭!!</button>
+    <button onclick="document.getElementById('test').innerHTML=Date()">클릭2!!</button>
+    <div id="test"></div>
+    <div id="test1"></div>
+</body>
+</html>

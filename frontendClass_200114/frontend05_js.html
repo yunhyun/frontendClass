@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            console.log(new Date().getHours());
+            
+            if(new Date().getHours()<12){
+                console.log("오전입니다.");
+            } else{
+                console.log("오후입니다.");
+            }
+            var x = 10;
+            if(x!=="10"){
+                console.log("타입이 같습니다.");
+            } else{
+                console.log("타입이 다릅니다.");
+            }
+
+            var day;
+            switch(new Date().getDay()){
+                case 1:
+                    day = "월요일입니다.";
+                    break;
+                case 2:
+                    day = "화요일입니다.";
+                    break;
+            }
+            console.log("오늘은 " +day);
+
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="testFn()">클릭!!</button>
+</body>
+</html>

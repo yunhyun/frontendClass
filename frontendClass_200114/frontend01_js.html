@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 자바스크립트 함수 선언
+        function testFunction() {
+            document.getElementById("test").innerHTML="나와라뿅";
+            // 변수 선언 및 사용 
+            var x = 5;
+            var y = 3;
+            // 연산자 
+            var z = x + y;
+            var z1 = x * y;
+            var z2 = x - y;
+            var z3 = x / y;
+            var z4 = x % y;
+            var z5 = x ** y;
+
+
+            //z = "문자를 입력해보자";
+            document.getElementById("calResult").innerHTML="<h4>"+z+" "+z1+" "+z2+" "+z3+" "+z4+" "+z5+"</h4>";
+        }
+    </script>
+
+</head>
+<body>
+    <h2>아랫줄에 자바스크립트에 의해서 문장이 출력됩니다.</h2>
+    <div id="test"></div>
+    <button onclick="testFunction()">클릭!</button>
+    <h3>덧셈결과 출력 </h3>
+    <div id="calResult"></div>
+</body>
+</html>
