@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function calGrade(){
+            var score = document.getElementById("score").value;
+            var grade;
+            if(score>=90){
+                grade="A";
+            } else if(score>=80){
+                grade="B";
+            } else{
+                grade="F";
+            }
+            document.getElementById("grade").value=grade;
+        }
+    </script>
+</head>
+<body>
+    <h1>성적산출하기</h1>
+    점수 : <input type="text" id="score"><br>
+    성적 : <input type="text" id="grade"><br>
+    <input type="button" value="성적??"
+            onclick="calGrade();">
+</body>
+</html>

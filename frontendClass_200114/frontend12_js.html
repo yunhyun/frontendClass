@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function calDays() {
+            var s = document.getElementById("startDate").value;
+            // document.write(s+"<br>");
+            var pdate = new Date(s);
+            // document.write(pdate+"<br>");
+            var today = new Date();
+            // document.write(pdate.getTime()+"<br>");
+            var diff = today.getTime() - pdate.getTime();
+            var days = Math.floor(diff / 
+                        (1000 * 60 * 60 * 24));
+            alert("태어난지 "+days+"일");
+            if(days>10000){
+                alert("와우 10000일이 넘다니");
+            } else{
+                alert("젊어서 좋겠네");
+            }
+        }
+    </script>
+</head>
+<body>
+    언제 태어났니??
+    <input type="date" id="startDate">
+    <button onclick="calDays();">
+            클릭!!</button>
+</body>
+</html>

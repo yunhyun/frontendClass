@@ -3,29 +3,23 @@
 <head>
     <title>덧셈 계산기</title>
     <script>
-        //cal 이라는 함수 선언 
+        
         function cal(){
-        //cal 함수가 해야할 일 
-        /* 입력된 숫자 2개를 가져와서 
-            덧셈을 하고 
-            덧셈 결과를 합계 부분에 출력해주기 */
             var x = document.getElementById("num1").value;
             var y = document.getElementById("num2").value;
-            // var num1 = parseInt(x);
-            // var num2 = parseInt(y);
-            var sumResult = num1 + num2;
+            var num1 = parseInt(x);
+            var num2 = parseInt(y);
+            var sum = num1 + num2;
             document.getElementById("sum").value = sumResult;
         }
     </script>
 </head>
 <body>
-    <form>
+    
         첫번째 숫자 : <input type="text" id="num1"><br>
         두번째 숫자 : <input type="text" id="num2"><br>
         합계 : <input id="sum"><br>
-        <input type="button" value="계산!!"
-                onclick="cal();">
-        
-    </form>
+        <input type="button" value="계산!!" onclick="cal()">
+    
 </body>
 </html>
