@@ -2,28 +2,27 @@
 <html>
 <head>
     <script>
-        var id;
-        function changeColor(){
-            id = setInterval('flashText()', 500);
-        }
-        function flashText(){
-            var ele = document.getElementById("textChange");
-            ele.style.color =
-                (ele.style.color=="white")?"blue":"white";
-            ele.style.backgroundColor = 
-                (ele.style.backgroundColor=="red")?
-                                    "yellow":"red";    
-        }
-        function stop(){
-            clearInterval(id);
-        }
+        function onMouseIn() {
+            var elem = document.getElementById("divId");
+            elem.style.border = "2px solid red"; }
+        function onMouseOut() {
+            var elem = document.getElementById("divId");
+            elem.style.border = ""; }
+        
+        function onMouseIn(elem) {
+            // var elem = document.getElementById("divId");
+            elem.style.border = "2px solid red"; }
+        function onMouseOut(elem) {
+            // var elem = document.getElementById("divId");
+            elem.style.border = ""; }            
     </script>
 </head>
-<body onload="changeColor();">
-    <div id="textChange">
-        <p>이부분을 바꿔봅시다</p>
+<body>
+    <div id="divId" style="background-color: yellow; 
+                width: 200px"
+        onmouseover="onMouseIn(this)" 
+        onmouseout="onMouseOut(this)">
+        마우스를 이 요소 위에 이동하세요.
     </div>
-    <button onclick="stop();">눈아파요그만</button>
 </body>
 </html>
-    

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            document.getElementById("id1").style.backgroundColor="yellow";
+        }
+        function testFn1(elem, color1){
+            elem.style.color = color1;
+            document.getElementById("id2").style.color = "red";
+        }
+        function testFn2(){
+            document.getElementById("id3").style.border.color="blue";
+        }
+        function testFn3(){
+            document.getElementById("id3").style.backgroundColor="";
+        }
+        function testFn4(){
+            var elem = document.getElementById("id4");
+            elem.value = elem.value.toUpperCase();
+            document.getElementById("id5").innerHTML = elem.value;
+        }
+        function testFn5(){
+            document.getElementById("id6").style.color = "red";
+        }
+        function testFn6(){
+            document.getElementById("id6").style.color = "blue";
+        }
+        function testFn7(){
+            var elem = document.getElementById("id7");
+            elem.style.border = "5px solid red";
+        }
+        function testFn8(){
+            var elem = document.getElementById("id7");
+            elem.style.border = "";
+        }
+    </script>
+</head>
+<body>
+    <p id="id1" ondblclick="testFn()">p태그로 작성한 부분입니다.</p>
+    <p id="id2" onclick="testFn1(this, 'red')">p태그로 작성한 부분입니다.</p>
+    이름 : <input id="id3" type="text" onfocus="testFn2()" onblur="testFn3()">
+    아이디 : <input id="id4" type="text" onkeydown="testFn4()" maxlength="5">
+    <h3 id="id5"></h3>
+
+    <p id="id6" onmousedown="testFn5()" onmouseup="testFn6()">
+        p태그로 또 작성한 부분입니다.</p>
+    
+    <div id="id7" style="background-color: yellow; width: 200px; height: 200px;"
+            onmouseover="testFn7()" onmouseout="testFn8()">
+        마우스를 들락날락</div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            var elem = document.getElementById("id1").value;
+            document.getElementById("id2").innerHTML = 
+                    "당신이 선택한 내용은 "+elem;
+        }
+        function testFn1(elem1){
+            alert("입력내용이 변경됐네요");
+            document.getElementById("id2").innerHTML = elem1;
+        }
+        function testFn2(){
+            alert("입력내용이 변경됐네요");
+            var elem2 = document.getElementsByTagName("input")[0].value;
+            document.getElementById("id2").innerHTML = elem2;
+        }
+    </script>
+</head>
+<body>
+    <h3>하나만 선택해보세요</h3>
+    <select id="id1" onchange="testFn()">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="jQuery">jQuery</option>
+    </select>
+
+    <!-- <input type="text" value="값이 있네요"
+            onchange="testFn1(this.value)"> -->
+    <input type="text" value="값이 있네요"
+            onchange="testFn2()">
+
+    <h3 id="id2"></h3>
+</body>
+</html>

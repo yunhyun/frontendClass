@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            // var btn = document.createElement("button");
+            var btn = document.createElement("h2");
+            btn.innerHTML = "새로운 텍스트";
+            // document.body.appendChild(btn);
+            document.getElementById("id1").appendChild(btn);
+        }
+    </script>
+    <style>
+    #id1{
+        background-color: yellow;
+    }
+    #id2{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div id="id1">div1영역</div>
+    <div id="id2">div2영역</div>
+    <button onclick="testFn()">클릭</button>
+</body>
+</html>
