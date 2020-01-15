@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function testFn(){
+            // var list = document.getElementsByClassName("class1")[0];
+            // document.getElementsByClassName("class2")[1].innerHTML="바닐라라떼";
+            // var elem = document.getElementsByClassName("class2");
+            // var elem = document.getElementsByTagName("li");
+            // document.querySelector(".class2").innerHTML = "에스프레소";
+            var elem = document.querySelectorAll(".class2");
+            for (var i=0;i<elem.length;i++){
+                elem[i].style.backgroundColor = "red";
+            }
+            // document.getElementsByTagName("li")[0].innerHTML="에스프레소";
+            // DOM(Document Object Model)
+        }
+    </script>
+</head>
+<body>
+    <ul class="class1">
+        <li class="class2">아메리카노</li>
+        <li class="class2">생딸기라떼</li>
+        <li class="class2">녹차프라푸치노</li>
+    </ul>
+    <div id="id1">
+        <p>오늘은 2020년 1월 15일 <span class="class2">수요일</span> 입니다.</p>
+    </div>
+    <ol>
+        <li>맥북</li>
+        <li>맥북에어</li>
+    </ol>
+    <button onclick="testFn()">클릭!!</button>
+</body>
+</html>

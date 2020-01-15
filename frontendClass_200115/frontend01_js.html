@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function print(){
+            var value = document.getElementById("id1").innerHTML;
+            alert(value);
+        }
+        function change(value1){
+            alert(value1);
+            document.getElementById("id1").innerHTML = value1;
+        }
+    </script>
+</head>
+<body>
+    <div id="id1">div 영역입니다.</div>
+    <button onclick="print()">출력</button>
+    <button onclick="change('이걸 출력해주세요')">출력1</button>
+
+</body>
+</html>

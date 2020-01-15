@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var cc;
+        function changeColor(){
+            cc = setInterval(flashTest, 500);
+        }
+        function flashTest(){
+            var elem = document.getElementById("textChange");
+            elem.style.color = 
+                (elem.style.color=="white")?"blue":"white";
+            elem.style.backgroundColor = 
+                (elem.style.backgroundColor=="red")?"yellow":"red";
+        }
+        function stop(){
+            clearInterval(cc);
+        }
+    </script>
+    <style>
+         #textChange{
+            width: 200px; height: 200px;
+        }
+    </style>
+</head>
+<body onload="changeColor()">
+    <div id="textChange">
+        <p>이부분을 바꿔봅시다</p>
+    </div>
+    <button onclick="stop()">눈아파요그만</button>
+</body>
+</html>
+    

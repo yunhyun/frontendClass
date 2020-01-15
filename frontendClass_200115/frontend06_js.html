@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .testclass{
+            color:red;
+        }
+    </style>
+    <script>
+        function testFn(){
+        var elem = document.getElementsByTagName("h2")[0];
+        var att = document.createAttribute("class");
+        att.value = "testclass";
+        elem.setAttributeNode(att);
+
+        var elem1 = document.getElementById("id1");    
+        var att1 = document.createAttribute("href");
+        att1.value = "http://www.google.com";
+        elem1.setAttributeNode(att1);
+    }
+    function testFn1(){
+        document.getElementsByTagName("h2")[0].removeAttribute("class");
+    }
+    </script>
+</head>
+<body>
+    <h2>조금만 있으면 점심시간</h2>
+    <a id="id1">구글링을 하자</a> <br>
+    <button onclick="testFn()">클릭</button>
+    <button onclick="testFn1()">클릭1</button>
+</body>
+</html>
