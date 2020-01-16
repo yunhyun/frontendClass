@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $("h3").hide();    
+            $("p.q1").click(function () {    
+                $("h3.q1").show();
+            });
+            $("h3.q1").click(function () {   
+                $("h3.q1").hide();
+            });
+            $("p.q2").click(function () {    
+                $("h3.q2").show();
+            });
+            $("h3.q2").click(function () {    
+                $("h3.q2").hide();
+            });
+        });
+    </script>
+    <style>
+        h1{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <h1>정답보기를 클릭하면 정답이 짠</h1>
+        <h2>질문1 : 대한민국의 수도는 어디입니까?</h2>
+        <p class="q1">[정답 보기]</p>
+        <h3 class="q1">대한민국의 수도는 <strong>서울</strong>입니다.</h3>
+        <br></br>
+        <h2>질문2 : 대한민국의 국보1호는 무엇입니까?</h2>
+        <p class="q2">[정답 보기]</p>
+        <h3 class="q2">대한민국의 국보1호는 <strong>숭례문</strong>입니다.</h3>
+</body>
+</html>

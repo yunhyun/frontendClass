@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            // $("h2").click(function(){
+            //     alert("h2태그 클릭 이벤트 발생");
+            // });
+            $("#id1").click(function(){
+                // alert("id1 클릭하셨네요");
+                $(".class1").hide();
+                $(".class1").show();
+            });
+            $("#btn1").click(function(){
+                $("h2").hide();
+            });
+            $("#btn2").click(function(){
+                $("h2").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 id="id1">조금만 있으면 퇴근</h2>
+    <h2 class="class1">내일은 금요일</h2>
+    <button id="btn1">사라져라</button>
+    <button id="btn2">나타나라</button>
+</body>
+</html>

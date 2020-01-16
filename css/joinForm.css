@@ -1,7 +1,10 @@
 *{
     margin:10px;
-    padding: 5px;
+    padding: 3px;
     /* text-align: left; */
+    font-family: 'Jua', sans-serif;
+    /* font-family: 'Gugi', cursive; */
+    /* font-family: 'Do Hyeon', sans-serif; */
 }
 /* .items{
     display: inline-block;
@@ -14,12 +17,13 @@ table, tr, td{
     
 }
 table{
-    
     margin-left: auto;
     margin-right: auto;
+    /* border: 10px black solid; */
+    /* width: 900px; */
 }
 input{
-    width: 250px;
+    width: 200px;
     border: 1px;
     border-bottom: 0.5px rgb(167, 164, 164) solid;
     font-size: 13px;
