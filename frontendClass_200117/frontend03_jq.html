@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>jQeury 연습</title>
+    <script>
+        $(document).ready(function(){
+            $("#id1").dblclick(function(){
+                $("#id1").hide();
+            });
+            $(".add").click(function(){
+                // $("h1").css("color","red");
+                // $("h2").css("color","red");
+                // $("p").css("color","red");
+                $("h1, h2, p").css("color","red");
+                $("div").addClass("textFont");
+                $("div").addClass("textColor");
+            });
+            $(".remove").click(function(){
+                $("div").removeClass("textFont");
+                $("div").removeClass("textColor");
+            });
+        });
+    </script>
+    <style>
+        .textFont{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .textColor{
+            color: chartreuse;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+    <h1 id="id1">frontend</h1>
+    <h2>html5</h2>
+    <p>javascript</p>
+    <div>jQuery</div><br>
+    <button class="add">CSS 적용</button>
+    <button class="remove">CSS 해제</button>
+
+</html>

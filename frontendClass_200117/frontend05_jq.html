@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>jQuery 연습</title>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("img").animate({height:'1000px', opacity:'0.5'},"slow");
+                // $("img").animate({
+                //     left:'300px',
+                //     height:'500px',
+                //     width:'400px',
+                //     opacity:'0.3'
+                // });
+                // $("img").animate({
+                //     left:'300px',
+                //     height:'+=50px',
+                //     width:'+=50px'
+                // });
+                // $("img").animate({
+                //     height:'toggle'                    
+                // });
+                var img = $("img");
+                img.animate({height:'300px',opacity:'0.4'},"slow");
+                img.animate({width:'300px',opacity:'0.8'},"slow");
+                img.animate({height:'100px',opacity:'0.4'},"slow");
+                img.animate({width:'100px',opacity:'0.8'},"slow");
+            });
+        });      
+    </script>
+    <style>
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">클릭</button>
+    <div id="div1">
+        <img src="../images/스위스.jpg" width="100px" height="100px">
+    </div>
+</body>
+
+</html>

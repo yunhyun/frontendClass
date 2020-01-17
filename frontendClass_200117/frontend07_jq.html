@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>표준폼</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("입력값은 : "+$("#id1").val());
+                var value = $("#id1").val();
+                console.log(value);
+            });
+            $("#btn2").click(function(){
+                alert("속성값은 : "+$("#id2").attr("href"));
+            });
+            $("#btn3").click(function(){
+                $("#id3").text("<b>바뀌는 내용입니다.</b>");
+            });
+            $("#btn4").click(function(){
+                $("#id4").html("<b>바뀌는 내용입니다.</b>");
+            });
+            $("#btn5").click(function(){
+                $("#id5").val("input 입력칸 내용이 바뀝니다.");
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <input type="text" id="id1">
+    <button id="btn1">input태그 입력값?</button>
+    <a href="https://www.google.com" id="id2">Google</a>
+    <button id="btn2">클릭?</button>
+    <br><br>
+    <p id="id3">첫번째 p태그</p>
+    <p id="id4">두번째 p태그</p>
+    <input type="text" id="id5" value="기본 입력값"><br>
+    <button id="btn3">Set text</button>
+    <button id="btn4">Set html</button>
+    <button id="btn5">Set Value</button>
+</body>
+
+</html>

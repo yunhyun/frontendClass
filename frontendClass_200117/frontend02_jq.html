@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>표준폼</title>
+    <script>
+        $(document).ready(function(){
+            $("#id1").focus(function(){
+                $("#id1").css("background-color","yellow");
+            });
+            $("#id1").blur(function(){
+                $("#id1").css("background-color","white");
+            });
+            // id2 를 클릭했을 때 글자색을 빨간색, 글자크기를 100px로 변경
+            $("#id2").click(function(){
+                $("#id2").css("color","red");
+                $("#id2").css("font-size","100px");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    입력하고 싶은 내용 : <input type="text" id="id1">
+    <p id="id2">텍스트</p>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>표준폼</title>
+
+    <style>
+        #div1{
+            width: 300px;
+            height: 100px;
+            background-color: crimson;
+            border: solid 1px black;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                console.log($("#div1").height());
+                // var value="";
+                var value = "div 가로크기 :"+
+                        $("#div1").width()+"<br>";
+                value += "div 세로크기 :"+
+                        $("#div1").height()+"<br>";
+                $("#div1").html(value);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <button id="btn1">div 크기 출력하기</button>
+</body>
+
+</html>

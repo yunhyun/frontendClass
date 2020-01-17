@@ -12,12 +12,23 @@
             crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
-    <title>표준폼</title>
-
+    <title>jQuery 연습</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("결과 : "+$("#id1").text());
+            });
+            $("#btn2").click(function(){
+                alert("결과 : "+$("#id1").html());
+            });
+        });
+    </script>
 </head>
 
 <body>
-
+    <p id="id1">오늘은 <strong>금요일</strong> 와~~</p>
+    <button id="btn1">text</button>
+    <button id="btn2">html</button>
 </body>
 
 </html>

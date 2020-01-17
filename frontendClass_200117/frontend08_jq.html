@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
+    <title>표준폼</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").prepend("<b>추가글자</b>");
+            });
+            $("#btn2").click(function(){
+                $("ol").prepend("<li>추가항목</li>");
+            });
+            $("#btn3").click(function(){
+                $("p").remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>점심시간이 얼마 남지 않았습니다.</p>
+    <p>내일은 주말이네요^o^</p>
+    <ol>
+        <li>첫번째항목</li>
+        <li>두번째항목</li>
+        <li>세번째항목</li>
+    </ol>
+    <button id="btn1">글자 추가</button>
+    <button id="btn2">li 추가</button>
+    <button id="btn3">삭제</button>
+
+</body>
+
+</html>

@@ -14,10 +14,30 @@
     <script src="https://kit.fontawesome.com/bd39ee1686.js" crossorigin="anonymous"></script>
     <title>표준폼</title>
 
+    <style>
+        div.mouseevent{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+    <script>
+        var i=0;
+        $(document).ready(function(){
+            $("div.mouseevent").mouseover(function(){
+                $("p:first", this).text("마우스 들어옴");
+                $("p:last", this).text(i++);
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-
+    <div class="mouseevent">
+        <p>마우스를 올려보세요</p>
+        <p>0</p>
+    </div>
 </body>
 
 </html>
